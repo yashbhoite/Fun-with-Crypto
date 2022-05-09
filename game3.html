@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVEL 4</title>
+    <link rel="shortcut icon" href="/static/images/joystick.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #041C3F;">
+    <h1 style="color: aliceblue; text-align: center; padding-top: 15px">
+        LEVEL 4
+      </h1>
+      <center>
+        <div class="container ruler">
+          <div class="lines">
+            <div class="images"></div>
+          </div>
+        </div>
+      </center>
+<h2 style="text-align: center;color: aliceblue;">Cipher Text:- GIuplpSx jpf l azmo rdGphEgln xa nixgyi Nrlld</h2>
+<h2 style="text-align: center;color: aliceblue;">Key:- erenegiv</h2>
+   <center><form style="margin-top: 15px;"  action="/vignere" method="post" autocomplete="off">
+        <label for="answer" class="form-label answer" style="color: aliceblue;">Answer:-</label>
+        <input type="text" class="form-control answer" id="answer" placeholder="Enter your answer" name="answer">
+     </form></center> 
+     <h3 style="text-align: left;color: aliceblue;">Hints:-</h3>
+          <div style="display: flex;flex-wrap: wrap;justify-content: space-around;gap:10px">
+                 <img src="../static/images/vigenere-table1.png" width="350vw">
+             <img src="../static/images/reverse.png" width="350vw">
+
+     </div>
+     <script>
+        var alert_message = '{{ message }}'
+             if (alert_message != '') {
+                 alert(alert_message);
+             }
+    </script>
+</body>
+</html>

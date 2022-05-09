@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ciphers</title>
+  <link rel="shortcut icon" href="../static/images/cryptography.png">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color: black">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CIPHERS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/start">Game</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="header_container">
+      <img src="../static/images/joystick.png" />
+      <div class="hero-container">
+        <div class="environment"></div>
+        <h2 class="hero glitch layers" data-text="Ciphers">
+          <span>CIPHERS</span>
+        </h2>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="about">
+      <h2 style="color: aliceblue; text-align: center; padding-top: 15px">
+        Games
+      </h2>
+      <center>
+        <div class="container ruler">
+          <div class="lines">
+            <div class="images"></div>
+          </div>
+        </div>
+      </center>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mt-2 mx-auto">
+            <a href="/game" style="text-decoration:none">
+            <div class="card" style="width: 14rem;">
+              <img src="../static/images/cryptography.png" height="150px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text games">Ciphers</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mt-2 mx-auto">
+            <a href="/numeric" style="text-decoration:none">
+            <div class="card" style="width: 14rem;">
+              <img src="../static/images/numbers.png" height="150px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text games">Numeric System</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mt-2 mx-auto">
+            <a href="/sec" style="text-decoration:none">
+            <div class="card" style="width: 14rem;">
+              <img src="../static/images/security.png" height="150px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text games">Hardware & Security</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mt-2 mx-auto">
+            <a href="/cia" style="text-decoration:none">
+            <div class="card" style="width: 14rem;">
+              <img src="../static/images/secret-file.png" height="150px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text games">CIA</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mt-2 mx-auto">
+            <a href="/phis" style="text-decoration:none">
+            <div class="card" style="width: 14rem;">
+              <img src="../static/images/phising.png" height="150px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text games">Phising</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mt-2 mx-auto">
+            <a href="/sniff" style="text-decoration:none">
+            <div class="card" style="width: 14rem;">
+              <img src="../static/images/spoofing.png" height="150px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text games">Spoofing</p>
+              </div>
+            </div></a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-3 mt-2 mx-auto">
+            <a href="/pa" style="text-decoration:none">
+            <div class="card" style="width: 14rem;">
+              <img src="../static/images/hacker.png" height="150px" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text games">Passive & Active Attack</p>
+              </div>
+            </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#47a8ac" fill-opacity="1"
+      d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,122.7C672,107,768,117,864,149.3C960,181,1056,235,1152,240C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+    </path>
+  </svg>
+  <div class="prizes mb-4 pb-3" id="prize">
+    <h2 style="color: aliceblue; text-align: center; padding-top: 15px">
+      More about games
+    </h2>
+    <center>
+      <div class="container ruler">
+        <div class="lines">
+          <div class="images"></div>
+        </div>
+      </div>
+    </center>
+    <div class="container">
+      <div class="row mx-auto ">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mx-auto">
+          <a href="https://en.wikipedia.org/wiki/Null_cipher#:~:text=A%20null%20cipher%2C%20also%20known,be%20used%20to%20hide%20ciphertext."
+            style="text-decoration: none; color: black" target="_blank">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Ciphers</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mx-auto">
+          <a href="https://en.wikipedia.org/wiki/Rail_fence_cipher" style="text-decoration: none; color: black"
+            target="_blank">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Numeric System</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mx-auto">
+          <a href="https://en.wikipedia.org/wiki/Caesar_cipher" style="text-decoration: none; color: black"
+            target="_blank">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Hardware & Security</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mx-auto">
+          <a href="https://en.wikipedia.org/wiki/Pigpen_cipher" style="text-decoration: none; color: black"
+            target="_blank">
+            <div class="card" style="width: 18rem">
+
+              <div class="card-body">
+                <h5 class="card-title">CIA</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mx-auto">
+          <a href="https://en.wikipedia.org/wiki/Substitution_cipher" style="text-decoration: none; color: black"
+            target="_blank">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Phising</h5>
+
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mx-auto">
+          <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher" style="text-decoration: none; color: black"
+            target="_blank">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Spoofing</h5>
+
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mx-auto">
+          <a href="https://www.boxentriq.com/code-breaking/dancing-men-cipher#:~:text=The%20Dancing%20Men%20cipher%20originated,the%20code%20by%20frequency%20analysis."
+            style="text-decoration: none; color: black" target="_blank">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Passive & Active Attack</h5>
+
+
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" class="down" viewBox="0 0 1440 320"><path fill="#180c42" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,202.7C384,181,480,139,576,122.7C672,107,768,117,864,149.3C960,181,1056,235,1152,240C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+  <!-- <div class="sponsors">
+        <h2 style="color: aliceblue;text-align: center;padding-top: 15px;">Sponsors</h2>
+        <center>
+            <div class="container ruler">
+                <div class=lines>
+                    <div class=images>
+                    </div>
+                </div>
+            </div>
+        </center> 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3 text-center gfg">
+              <img src="../static/GeeksforGeeks.svg.png" height="150px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3 text-center jb">
+              <img src="../static/JetBrains-Logo.wine.png" height="100px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-3 text-center do">
+              <img src="../static/digital ocean.jpg" height="110px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4 text-center so">
+              <img src="../static/tcs-removebg-preview.png" height="60px">
+            </div>
+          </div>
+        </div>
+      <p>Want to sponsor us? Drop us a mail at<b style="color: rgb(206, 185, 69);"> interstellar@siesgst.ac.in</b></p>
+    </div> -->
+  <footer>
+    <p>Developed by OVAY</p>
+  </footer>
+  <!-------------------------script tags-------------------------------------->
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="static/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

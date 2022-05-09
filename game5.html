@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVEL 6</title>
+    <link rel="shortcut icon" href="/static/images/joystick.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #041C3F;">
+    <h1 style="color: aliceblue; text-align: center; padding-top: 15px">
+        LEVEL 6
+      </h1>
+      <center>
+        <div class="container ruler">
+          <div class="lines">
+            <div class="images"></div>
+          </div>
+        </div>
+      </center>
+    <h2 style="color: aliceblue;margin-left: 115px;">Cipher text: - yasoeguureian<br> Key: - 4 </h2>
+    <form style="margin-left: 115px;margin-top: 5px;" action="/rail" method="post" autocomplete="off">
+        <label for="answer" class="form-label">Answer:-</label>
+        <input type="text" class="form-control" id="answer" placeholder="Enter your answer" name="answer">
+     </form>
+    <h3 style="color: aliceblue;"><br><br> Hint:-</h3>
+    <img src="../static/images/Encrypting-using-Rail-Fence-Cipher5.ppm" width="350vw">
+ <script>
+     var alert_message = '{{ message }}'
+          if (alert_message != '') {
+              alert(alert_message);
+          }
+     document.querySelector("#play").addEventListener("click", () => {
+  document.querySelector("#video").play();
+});
+ </script>
+</body>
+</html>

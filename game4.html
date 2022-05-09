@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEVEL 5</title>
+    <link rel="shortcut icon" href="/static/images/joystick.png">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #041C3F;">
+    <h1 style="color: aliceblue; text-align: center; padding-top: 15px">
+        LEVEL 5
+      </h1>
+      <center>
+        <div class="container ruler">
+          <div class="lines">
+            <div class="images"></div>
+          </div>
+        </div>
+      </center>
+<h2 style="text-align: center;color: aliceblue;">The answer which you got in the previous level was also a decrypted text.</h2>
+<h2 style="text-align: center;color: aliceblue;">The Cipher Text was:- LAolylBt ohz h nvvk wvAluAphs pu jvtpun Flhyz</h2>
+   <center><form style="margin-top: 15px;"  action="/subs" method="post" autocomplete="off">
+        <label for="answer" class="form-label answer" style="color: aliceblue;">Answer:-</label>
+        <input type="text" class="form-control" id="answer" placeholder="Enter your answer" name="answer">
+     </form></center> 
+     <h3 style="text-align: left;color: aliceblue;">Hints:-</h3>
+                 <img src="../static/images/substitution-cipher-300x126.png" width="350vw">
+     <h3 style="text-align: left;color: aliceblue;">To know how much to shift, use the number associated with a sports player used in a previous answer. </h3>
+     <script>
+        var alert_message = '{{ message }}'
+             if (alert_message != '') {
+                 alert(alert_message);
+             }
+    </script>
+</body>
+</html>
